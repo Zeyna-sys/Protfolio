@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Mes Projets</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="skills.html">Compétences</a></li>
+                <li><a href="projects.html">Projets</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Mes Projets</h2>
+            <ul>
+                <li class="project">
+                    <strong>Site web personnel :</strong> Création de mon portfolio pour mettre en avant mes compétences et projets.
+                </li>
+                <li class="project">
+                    <strong>Application de gestion de projets topographiques :</strong> Outil développé pour aider les équipes à gérer les tâches et les ressources.
+                </li>
+                <li class="project">
+                    <strong>Projet de visualisation de données géométriques :</strong> Développement d'une solution web pour afficher des données de topographie.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Projets récents</h2>
+            <ul>
+                <li class="project">Site web personnel</li>
+                <li class="project">Application de gestion de tâches</li>
+                <li class="project">Projet de visualisation de données géométriques</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dieynaba NDIAYE</p>
+    </footer>
+
+    <script>
+        // Ajoute un effet de survol sur les projets
+        const projects = document.querySelectorAll('.project');
+        projects.forEach(project => {
+            project.addEventListener('mouseover', () => {
+                project.style.transform = 'scale(1.05)';
+                project.style.transition = 'transform 0.3s';
+            });
+            project.addEventListener('mouseout', () => {
+                project.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
